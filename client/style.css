@@ -1,3 +1,7 @@
+h1 {
+    text-align: center;
+}
+
 canvas {
     border: 4px;
     border-color: black;
@@ -5,4 +9,10 @@ canvas {
     display: block;
     margin-inline: auto;
     max-width: 100%;
+}
+
+#input-container {
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
 }
