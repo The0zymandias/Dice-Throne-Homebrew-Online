@@ -1,0 +1,19 @@
+client commands
+
+ROLL_DICE (dice 1 index) (dice 2 index) (dice 3 index) ...
+DRAW_CARD (num of cards to draw)
+DISCARD (card index 1) (card index 2) (card index 3) ...
+SET_HEALTH (health)
+SET_CP (cp)
+CREATE_GAME (game name) (game password)
+JOIN_GAME (game name) (game password)
+
+server commands (for updating other client)
+SET_DECK_CARD_COUNT
+SET_OPP_DICE
+SET_OPP_CARD_COUNT
+SET_OPP_DECK_CARD_COUNT
+SET_OPP_HEALTH
+SET_OPP_CP
+GAME_CANNOT_BE_MADE (message)
+YOU_SHALL_NOT_PASS (message)

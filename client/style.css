@@ -1,0 +1,8 @@
+canvas {
+    border: 4px;
+    border-color: black;
+    border-style: groove;
+    display: block;
+    margin-inline: auto;
+    max-width: 100%;
+}
