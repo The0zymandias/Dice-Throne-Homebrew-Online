@@ -1,21 +1,29 @@
+from websockets.asyncio.server import Server
+from typing import Any
 import asyncio
 
 from websockets.asyncio.server import serve
 from websockets.exceptions import ConnectionClosedOK
 
-listOfGames: dict
+from gameInstance import gameInstance
 
-async def handler(websocket):
-    otherPlayer = None
+from json import dumps, loads, JSONDecodeError
 
+listOfGames: dict[str, gameInstance] = {}
+
+async def handler(websocket) -> None:
     async for message in websocket:
-        pieces = message.split();
-        print(pieces)
+        print(f"From sock {websocket.id}: {message}")
+        try: 
+            msgJson = loads(message)
+        except JSONDecodeError as e:
+            print(f"ERROR: {e.msg}")
+        else:
+            command = msgJson["command"]
+            data = msgJson["data"]
 
-    del openClients[str(websocket)]
-
-async def main():
-    server = await serve(handler, "localhost", 8001)
+async def main() -> None:
+    server: Server = await serve(handler, "localhost", 8001)
     await server.serve_forever()
 
 if __name__ == '__main__':

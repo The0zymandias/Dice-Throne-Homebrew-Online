@@ -8,13 +8,25 @@
   <body>
     <header></header>
     <main>
-      <h1>Current Game (Host): None</h1>
-      <canvas id="tabletop" width="1280" height="800">
-        If you see this text shit is fucked lmao
-      </canvas>
-      <div id="input-container">
-        <input type="button"/>
+      <h1>Throw Those Dice means Throne Them Dice</h1>
+
+      <div id="entergameview">
+        <img height="200" id="pit-big-gif" src="./assets/pit-big.gif" alt="Server working">
+        <p>Server <input type="text" size="40" required /></p>
+        <p>Name <input type="text" size="40" required /></p>
+        <p>Password <input type="text" size="40" required /></p>
+        <pre><input type="button" value="Host" size="40" />  <input type="button" value="Join" size="40" /></pre>
       </div>
+
+      <div id="gameview" hidden>
+        <canvas id="tabletop" width="1280" height="800">
+          <img src="./assets/pit-big.gif" alt="The tabletop failed to load :(">
+        </canvas>
+        <div id="input-container">
+          <input type="button"/>
+        </div>
+      </div>
+
     </main>
     <footer></footer>
     <script src="index.js" type="module"></script>

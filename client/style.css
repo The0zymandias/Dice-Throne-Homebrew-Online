@@ -1,5 +1,13 @@
+html {
+    font-size: large;
+}
+
 h1 {
     text-align: center;
+}
+
+pre {
+    font-size: 18px;
 }
 
 canvas {
@@ -15,4 +23,20 @@ canvas {
     margin-inline: auto;
     display: flex;
     justify-content: center;
+}
+
+#entergameview {
+    width: 100%;
+}
+
+#entergameviewinput {
+    display: flex;
+}
+
+#gameview {
+}
+
+#pit-big-gif {
+    display: block;
+    margin-inline: auto;
 }
