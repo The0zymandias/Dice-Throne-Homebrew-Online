@@ -15,6 +15,12 @@ html {
     font-family: "Myriad Pro Bold Condensed";
 }
 
+body {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
 h1 {
     text-align: center;
     color: aliceblue;
