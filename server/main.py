@@ -23,7 +23,7 @@ async def handler(websocket) -> None:
             data = msgJson["data"]
 
 async def main() -> None:
-    server: Server = await serve(handler, "localhost", 8001)
+    server: Server = await serve(handler, "localhost", 8765)
     await server.serve_forever()
 
 if __name__ == '__main__':

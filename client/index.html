@@ -3,18 +3,37 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title></title>
+    <title>DT Homebrew Client</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
   </head>
   <body>
-    <header></header>
+    <header>
+      <br>
+      <h1>THROW THOSE DICE MEANS THRONE THEM DICE</h1>
+      <hr>
+      <marquee><p>I hope the Wii Fit Trainer gets stung by a beehive!</p></marquee>
+      <hr>
+      <br>
+    </header>
     <main>
-      <h1>Throw Those Dice means Throne Them Dice</h1>
-
       <div id="entergameview">
-        <img height="200" id="pit-big-gif" src="./assets/pit-big.gif" alt="Server working">
-        <p>Server <input type="text" size="40" required /></p>
-        <p>Name <input type="text" size="40" required /></p>
-        <p>Password <input type="text" size="40" required /></p>
+        <p><img height="200" id="pit-big-gif" src="./assets/pit-big.gif" alt="Server working"></p>
+        <p>Waiting for user input...</p>
+        <br>
+        <table id="creategametable">
+          <tr>
+            <td class="labeltext">Server</td>
+            <td><input type="url" size="30" placeholder="ws://localhost:8765" required /></td>
+          </tr>
+          <tr>
+            <td class="labeltext">Game Name</td>
+            <td><input type="text" size="30" required /></td>
+          </tr>
+          <tr>
+            <td class="labeltext">Password</td>
+            <td><input type="text" size="30" required /></td>
+          </tr>
+        </table>
         <pre><input type="button" value="Host" size="40" />  <input type="button" value="Join" size="40" /></pre>
       </div>
 

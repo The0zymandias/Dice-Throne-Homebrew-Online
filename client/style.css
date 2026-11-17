@@ -1,13 +1,42 @@
+@font-face {
+    font-family: "Myriad Pro Bold Condensed";
+    src: url("./assets/Myriad Pro Bold Condensed.ttf");
+}
+
+@font-face {
+    /* Only has capital letters for some reason*/
+    font-family: PhosphateSolid;
+    src: url("./assets/PhosphateSolid.woff2");
+}
+
 html {
-    font-size: large;
+    font-size: larger;
+    background-image: url("./assets/bg.png");
+    font-family: "Myriad Pro Bold Condensed";
 }
 
 h1 {
     text-align: center;
+    color: aliceblue;
+    font-family: PhosphateSolid;
+}
+
+p {
+    color: aliceblue;
 }
 
 pre {
     font-size: 18px;
+}
+
+marquee p {
+    font-size: medium;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+hr {
+    color: aliceblue;
 }
 
 canvas {
@@ -27,10 +56,20 @@ canvas {
 
 #entergameview {
     width: 100%;
+    text-align: center;
 }
 
-#entergameviewinput {
-    display: flex;
+#creategametable {
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 10px;
+
+}
+
+#creategametable .labeltext {
+    text-align: left;
+    font-size: larger;
+    color: aliceblue;
 }
 
 #gameview {
