@@ -26,3 +26,19 @@ example client-to-server call: {
         "GAME_PASSWORD: str
     }
 }
+
+SERVER-SIDE DIAGRAM
+
+CLIENT CONNECTION START (Wrap this in a Try catch for random disconnect handling)
+roomName: str = ""
+
+for message from client:
+    messageJson = json.loads(message)
+
+    if roomName != "":
+        result = roomManager.getRoomFromName(roomName).handleClientMessage(client, messageJson);
+    else:
+        if messageJson["cmd"] == "MAKE_ROOM":
+            roomName = roomManager.tryMakeNewRoom(client, messageJson)
+        elif messageJson["cmd"] == "JOIN_ROOM":
+            roomName = roomManager.tryJoinRoom(client, messageJson)

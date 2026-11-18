@@ -4,7 +4,7 @@
 }
 
 @font-face {
-    /* Only has capital letters for some reason*/
+    /* Only has capital letters for some reason */
     font-family: PhosphateSolid;
     src: url("./assets/PhosphateSolid.woff2");
 }
@@ -13,6 +13,10 @@ html {
     font-size: larger;
     background-image: url("./assets/bg.png");
     font-family: "Myriad Pro Bold Condensed";
+}
+
+header {
+    background-color: rgb(15, 15, 15);
 }
 
 body {
@@ -31,8 +35,27 @@ p {
     color: aliceblue;
 }
 
+a:link {
+    color: aliceblue;
+    background-color: transparent;
+}
+
+a:visited {
+    color: aliceblue;
+    background-color: transparent;
+}
+
+span {
+    color: aliceblue;
+}
+
 pre {
     font-size: 18px;
+}
+
+tr {
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 marquee p {
