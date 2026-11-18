@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">   
   </head>
   <body>
-    <header style="background-color: rgb(15, 15, 15);">
+    <header>
       <table style="margin-inline: auto;">
         <tr>
           <td>
@@ -16,7 +16,7 @@
           <td>
             <div style="width: fit-content; margin-inline: auto;">
               <br>
-              <h1>THROW THOSE DICE MEANS THRONE THEM DICE</h1>
+              <h1>DICE THRONE HOMEBREW TABLETOP</h1>
               <marquee scrollamount=15 behavior=alternate><span style="color: rgb(255,246,0)">I hope the Wii Fit Trainer gets stung by a beehive!</span></marquee>
               <p style="font-size: 8px; color: rgb(15, 15, 15);">Nothing to see...</p>
             </div>
@@ -33,25 +33,27 @@
       <div id="entergameview">
         <p><img height="200" id="pit-big-gif" src="./assets/pit-big.gif" alt="Server working"></p>
         <p>Waiting for user...</p>
-        <br>
         <table id="creategametable">
-          <tr>
-            <td class="labeltext">Server</td>
-            <td><input type="url" size="30" placeholder="ws://localhost:8765" required /></td>
-          </tr>
-          <tr>
-            <td class="labeltext">Room Name</td>
-            <td><input type="text" size="30" required /></td>
-          </tr>
-          <tr>
-            <td class="labeltext">Password</td>
-            <td><input type="text" size="30" required /></td>
-          </tr>
+          <tbody>
+            <tr>
+              <td class="labeltext">Server</td>
+              <td><input type="url" size="30" placeholder="ws://localhost:8765" required /></td>
+            </tr>
+            <tr>
+              <td class="labeltext">Room Name</td>
+              <td><input type="text" size="30" required /></td>
+            </tr>
+            <tr>
+              <td class="labeltext">Password</td>
+              <td><input type="text" size="30" required /></td>
+            </tr>
+          </tbody>
         </table>
         <pre><input type="button" value="Host Room" size="40" />  <input type="button" value="Join Room" size="40" /></pre>
         <p>
           <a href="https://dice-throne.rulepop.com/" target="_blank">Dice Throne Rules (Rule Pop)</a>&nbsp;&nbsp;&nbsp;<a href="https://docs.google.com/document/d/1_GJz22nkGmcEjThXgEUlb8OykrNNigs33xpSywnwTRc/edit?tab=t.0" target="_blank">Advanced Rules and Clarifications</a>
         </p>
+        <p><a href="./whatisthis">What is this website?</a></p>
       </div>
 
       <div id="gameview" hidden>

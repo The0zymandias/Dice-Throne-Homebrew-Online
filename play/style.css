@@ -15,6 +15,10 @@ html {
     font-family: "Myriad Pro Bold Condensed";
 }
 
+header {
+    background-color: rgb(15, 15, 15);
+}
+
 body {
     margin-top: 0px;
     margin-left: 0px;
@@ -47,6 +51,11 @@ span {
 
 pre {
     font-size: 18px;
+}
+
+tr {
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 marquee p {
