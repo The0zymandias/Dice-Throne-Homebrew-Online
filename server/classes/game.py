@@ -2,7 +2,13 @@ class Game:
     def __init__(self):
         pass
 
-    def serializeGameState():
+    def serializePlayer1View():
+        pass
+
+    def serializePlayer2View():
+        pass
+
+    def serializeAnonymousView():
         pass
         
 class Hero:

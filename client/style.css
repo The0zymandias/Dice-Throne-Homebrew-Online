@@ -77,6 +77,10 @@ canvas {
     max-width: 100%;
 }
 
+#motd-text {
+    color: rgb(255,246,0);
+}
+
 #input-container {
     margin-inline: auto;
     display: flex;

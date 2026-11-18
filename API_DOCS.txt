@@ -20,7 +20,7 @@ YOU_SHALL_NOT_PASS (message)
 
 
 example client-to-server call: {
-    "cmd": "CREATE_GAME",
+    "head": "CREATE_GAME",
     "data": {
         "GAME_NAME": str,
         "GAME_PASSWORD: str
