@@ -33,6 +33,15 @@ function setUpRoomHostingConnection(url) {
     sock.addEventListener("message", (e) => {
         console.log("Recv " + e.data);
     })
+
+    sock.addEventListener("close", (e) => {
+        console.log("Closing socket because of close request");
+    })
+
+    sock.addEventListener("error", (e) => {
+        console.log("Error occured, resetting socket");
+        sock = null;
+    })
 }
 
 function sendMessageToServer(message) {

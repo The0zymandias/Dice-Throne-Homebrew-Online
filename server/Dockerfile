@@ -15,11 +15,11 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the rest of the application code
-COPY . .
+COPY ./src .
 
 RUN useradd --create-home appuser
 USER appuser
 
-EXPOSE 8000
+EXPOSE 8765
 
 CMD ["python", "main.py"]
